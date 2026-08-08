@@ -1,0 +1,306 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+ 
+
+.navbar{
+    width:100%;
+    height:70px;
+    background:#08162d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+}
+
+.logo h2{
+    color:#2d7cff;
+    font-size:28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    font-weight: 500;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+    font-size:17px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active{
+    color:#2d7cff;
+}
+
+
+ 
+
+.about{
+    width:85%;
+    margin:50px auto;
+}
+
+.about h1{
+    text-align:center;
+    font-size:42px;
+    color:#111;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#2d7cff;
+    margin:12px auto 50px;
+    border-radius:10px;
+}
+
+
+
+.about-top{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    margin-bottom:40px;
+}
+
+.about-icon{
+    width:120px;
+    display:flex;
+    justify-content:center;
+}
+
+.about-icon i{
+    font-size:80px;
+    color:#2d7cff;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    font-size:26px;
+    line-height:45px;
+    color:#333;
+}
+ 
+.info-box{
+    border:1px solid #ddd;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    overflow:hidden;
+}
+
+.box{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:25px;
+    border:1px solid #eee;
+    transition:.3s;
+}
+
+.box:hover{
+    background:#f8fbff;
+}
+
+.box i{
+    font-size:42px;
+    color:#2d7cff;
+    min-width:55px;
+}
+
+.box h3{
+    font-size:22px;
+    margin-bottom:6px;
+}
+
+.box p{
+    color:#555;
+    line-height:24px;
+}
+.wave{
+    width:100%;
+    height:40px;
+    background:#dcecff;
+    border-radius:100% 100% 0 0;
+}
+
+.about{
+    animation: fadeUp 1.1s ease;
+}
+
+@keyframes fadeUp{
+
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+ 
+ 
+ 
+@media (max-width: 992px){
+
+    .navbar{
+        padding:15px 30px;
+        flex-direction:column;
+        height:auto;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links li{
+        margin:10px 15px;
+    }
+
+    .about{
+        width:90%;
+    }
+
+    .about-top{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .about-icon{
+        width:100%;
+    }
+
+    .about-text p{
+        font-size:20px;
+        line-height:35px;
+    }
+
+    .info-box{
+        grid-template-columns:1fr;
+    }
+
+    .box{
+        width:100%;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .logo h2{
+        font-size:24px;
+    }
+
+    .navbar{
+        padding:15px;
+    }
+
+    .nav-links li{
+        margin:8px 10px;
+    }
+
+    .nav-links li a{
+        font-size:16px;
+    }
+
+    .about h1{
+        font-size:34px;
+    }
+
+    .about-icon i{
+        font-size:60px;
+    }
+
+    .about-text p{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .box{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    .box i{
+        font-size:35px;
+        margin-bottom:10px;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .navbar{
+        padding:10px;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav-links li{
+        margin:8px 0;
+    }
+
+    .about{
+        width:95%;
+        margin:30px auto;
+    }
+
+    .about h1{
+        font-size:28px;
+    }
+
+    .line{
+        width:60px;
+    }
+
+    .about-text p{
+        font-size:15px;
+        line-height:26px;
+    }
+
+    .box h3{
+        font-size:18px;
+    }
+
+    .box p{
+        font-size:14px;
+    }
+
+}

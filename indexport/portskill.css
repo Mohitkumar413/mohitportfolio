@@ -1,0 +1,281 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+ 
+
+.navbar{
+    width:100%;
+    height:70px;
+    background:#08162d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+}
+
+.logo h2{
+    color:#2d7cff;
+    font-size:28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    font-weight: 500;
+}
+
+.navbar ul li{
+    margin-left:35px;
+}
+
+.navbar ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color:#2d7cff;
+}
+
+ 
+
+.skills{
+    width:85%;
+    margin:50px auto;
+}
+
+.skills h1{
+    text-align:center;
+    font-size:42px;
+    color:#111;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#2d7cff;
+    margin:12px auto 50px;
+    border-radius:10px;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.skill-left{
+    flex:2;
+}
+
+.skill{
+    margin-bottom:28px;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.bar{
+    width:100%;
+    height:10px;
+    background:#e5e5e5;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.bar div{
+    height:100%;
+    background:#2d7cff;
+    border-radius:20px;
+}
+
+.html{
+    width:90%;
+}
+
+.css{
+    width:90%;
+}
+
+.js{
+    width:70%;
+}
+
+.python{
+    width:70%;
+}
+
+.c{
+    width:80%;
+}
+
+.git{
+    width:50%;
+}
+
+ 
+.other-skills{
+    flex:1;
+    background:#eef5ff;
+    padding:25px;
+    border-radius:10px;
+}
+
+.other-skills h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.other-skills ul{
+    padding-left:20px;
+}
+
+.other-skills li{
+    margin:18px 0;
+    color:#333;
+}
+ 
+
+.skill:hover .bar div{
+    filter:brightness(1.2);
+    transition:.3s;
+}
+
+.other-skills:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+.wave{
+    width:100%;
+    height:40px;
+    background:#dcecff;
+    border-radius:100% 100% 0 0;
+}
+
+
+.skill{
+    animation: fadeUp 1.1s ease;
+}
+
+@keyframes fadeUp{
+
+    0%{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+ 
+ 
+
+@media(max-width:992px){
+
+.navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+}
+
+.navbar ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.navbar ul li{
+    margin:10px 15px;
+}
+
+.skills-container{
+    flex-direction:column;
+}
+
+.other-skills{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.skills{
+    width:92%;
+}
+
+.skills h1{
+    font-size:34px;
+}
+
+.navbar{
+    padding:15px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.navbar ul li{
+    margin:8px;
+}
+
+.info{
+    font-size:15px;
+}
+
+.other-skills h2{
+    font-size:22px;
+}
+
+}
+
+@media(max-width:480px){
+
+.navbar ul{
+    flex-direction:column;
+    align-items:center;
+}
+
+.skills h1{
+    font-size:28px;
+}
+
+.line{
+    width:55px;
+}
+
+.info{
+    font-size:14px;
+}
+
+.other-skills{
+    padding:18px;
+}
+
+.other-skills li{
+    font-size:14px;
+}
+
+}
